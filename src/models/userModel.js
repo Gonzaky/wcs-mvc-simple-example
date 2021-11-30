@@ -5,5 +5,8 @@ const users = fakeDb.users;
 function getUsers() {
   return users;
 }
+function getOneUser(userId) {
+  return users.filter((el) => el.id === userId);
+}
 
-module.exports = { getUsers };
+module.exports = { getUsers, getOneUser };
